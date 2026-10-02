@@ -1,0 +1,47 @@
+# --- Secrets & credentials -------------------------------------------------
+.env
+.env.*
+*.pgpass
+.pgpass
+*credentials*
+*secret*
+*.pem
+*.key
+
+# --- Power BI ----------------------------------------------------------------
+# Commit the .pbit template only; the .pbix embeds data and can be large.
+*.pbix
+*.pbix.bak
+.pbi/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# --- Raw data & database dumps -----------------------------------------------
+data/
+raw/
+*.sql.gz
+*.dump
+*.backup
+*.csv
+*.parquet
+microfinance_ishonch.sql
+
+# --- Local PostgreSQL clusters / logs ----------------------------------------
+pgdata/
+*.log
+
+# --- Python / notebooks (if used for helpers) --------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- Editors & OS ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+~$*
